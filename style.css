@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 12px;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    background: linear-gradient(
+        to top right,
+        rgba(86, 41, 126, 0.847),
+        rgba(153, 95, 9, 0.87) 30%,
+        rgba(153, 95, 9, 0.87) 60%,
+        rgba(116, 52, 145, 0.847)
+    );
+    background-repeat: no-repeat;
+    /* background: linear-gradient(
+        to top right,
+        rgba(44, 10, 46, 0.847),
+        rgba(0, 0, 0, 0.87) 30%,
+        rgba(0, 0, 0, 0.87) 60%,
+        rgba(21, 8, 59, 0.847)
+    ); */
+}
+.main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    /* place-items: center;
+    justify-items: center; */
+}
+.root {
+    height: 40%;
+    width: 60%;
+    display: grid;
+    justify-items: center;
+    place-items: center;
+    gap: 1rem;
+}
+.input-div {
+    height: 120px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: black;
+}
+.result-div {
+    height: 120px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.res-div-display {
+    height: 100px;
+    width: 150px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    background: black;
+}
+/* height: 50px;
+    background-color: #ffffff;
+    color: #080808;
+    font-weight: 500;
+    border-radius: 5px; */
+.input-tag {
+    height: 50px;
+    width: 240px;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: large;
+    background-color: #ffffff;
+    color: #080808;
+    border: none;
+}
+
+.btn {
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: large;
+    outline: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #080808;
+    border: none;
+}
+
+#year-span,
+#month-span,
+#day-span {
+    height: 50px;
+    width: 70px;
+    font-size: 28px;
+    color: whitesmoke;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.para {
+    color: gray;
+    height: 20px;
+    width: 60px;
+    font-size: medium;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        font-family: sans-serif;
+        background: linear-gradient(
+            to top right,
+            rgba(86, 41, 126, 0.847),
+            rgba(153, 95, 9, 0.87) 30%,
+            rgba(153, 95, 9, 0.87) 60%,
+            rgba(116, 52, 145, 0.847)
+        );
+        background-repeat: no-repeat;
+    }
+    .main {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        justify-items: center;
+    }
+    .root {
+        height: 40%;
+        width: 60%;
+        display: grid;
+        justify-items: center;
+        place-items: center;
+        gap: 1rem;
+    }
+    .input-div,
+    .result-div {
+        width: 360px;
+    }
+    .input-tag {
+        width: 200px;
+    }
+    .res-div-display {
+        width: 100px;
+    }
+
+    .root {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        font-family: sans-serif;
+        background: linear-gradient(
+            to top right,
+            rgba(86, 41, 126, 0.847),
+            rgba(153, 95, 9, 0.87) 30%,
+            rgba(153, 95, 9, 0.87) 60%,
+            rgba(116, 52, 145, 0.847)
+        );
+        background-repeat: no-repeat;
+    }
+    .main {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        justify-items: center;
+    }
+    .root {
+        height: 40%;
+        width: 60%;
+        display: grid;
+        justify-items: center;
+        place-items: center;
+        gap: 1rem;
+    }
+    .input-div,
+    .result-div {
+        width: 360px;
+    }
+    .input-tag {
+        width: 200px;
+    }
+    .res-div-display {
+        width: 100px;
+    }
+
+    .root {
+        width: 400px;
+        height: 400px;
+    }
+}
