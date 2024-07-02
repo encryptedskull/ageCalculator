@@ -17,20 +17,13 @@ body {
         rgba(116, 52, 145, 0.847)
     );
     background-repeat: no-repeat;
-    /* background: linear-gradient(
-        to top right,
-        rgba(44, 10, 46, 0.847),
-        rgba(0, 0, 0, 0.87) 30%,
-        rgba(0, 0, 0, 0.87) 60%,
-        rgba(21, 8, 59, 0.847)
-    ); */
 }
 .main {
     height: 100%;
     width: 100%;
     display: grid;
-    /* place-items: center;
-    justify-items: center; */
+    place-items: center;
+    justify-items: center;
 }
 .root {
     height: 40%;
@@ -57,7 +50,7 @@ body {
     align-items: center;
 }
 .res-div-display {
-    height: 100px;
+    height: 120px;
     width: 150px;
     display: grid;
     place-items: center;
@@ -65,11 +58,7 @@ body {
     font-weight: 500;
     background: black;
 }
-/* height: 50px;
-    background-color: #ffffff;
-    color: #080808;
-    font-weight: 500;
-    border-radius: 5px; */
+
 .input-tag {
     height: 50px;
     width: 240px;
@@ -118,92 +107,57 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        height: 100vh;
-        width: 100vw;
-        font-family: sans-serif;
-        background: linear-gradient(
-            to top right,
-            rgba(86, 41, 126, 0.847),
-            rgba(153, 95, 9, 0.87) 30%,
-            rgba(153, 95, 9, 0.87) 60%,
-            rgba(116, 52, 145, 0.847)
-        );
-        background-repeat: no-repeat;
-    }
-    .main {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        place-items: center;
-        justify-items: center;
-    }
     .root {
-        height: 40%;
-        width: 60%;
-        display: grid;
-        justify-items: center;
-        place-items: center;
-        gap: 1rem;
-    }
-    .input-div,
-    .result-div {
-        width: 360px;
-    }
-    .input-tag {
-        width: 200px;
-    }
-    .res-div-display {
-        width: 100px;
+        width: 90%;
+        height: 300px;
     }
 
-    .root {
-        width: 400px;
-        height: 400px;
+    .input-div,
+    .result-div {
+        width: 100%;
+    }
+    .result-div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .input-div {
+        height: 100px;
+    }
+    .res-div-display {
+        width: 85px;
+    }
+
+    .input-tag {
+        width: 160px;
+    }
+    .btn {
+        width: 80px;
     }
 }
+
 @media (min-width: 600px) and (max-width: 900px) {
-    body {
-        height: 100vh;
-        width: 100vw;
-        font-family: sans-serif;
-        background: linear-gradient(
-            to top right,
-            rgba(86, 41, 126, 0.847),
-            rgba(153, 95, 9, 0.87) 30%,
-            rgba(153, 95, 9, 0.87) 60%,
-            rgba(116, 52, 145, 0.847)
-        );
-        background-repeat: no-repeat;
-    }
-    .main {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        place-items: center;
-        justify-items: center;
-    }
     .root {
-        height: 40%;
-        width: 60%;
-        display: grid;
-        justify-items: center;
-        place-items: center;
-        gap: 1rem;
-    }
-    .input-div,
-    .result-div {
-        width: 360px;
-    }
-    .input-tag {
-        width: 200px;
-    }
-    .res-div-display {
-        width: 100px;
+        width: 80%;
+        height: 300px;
     }
 
-    .root {
-        width: 400px;
-        height: 400px;
+    .input-div,
+    .result-div {
+        width: 100%;
+    }
+    .input-div {
+        height: 100px;
+    }
+
+    .result-div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .res-div-display {
+        width: 120px;
+    }
+
+    .input-tag {
+        width: 100%;
     }
 }
