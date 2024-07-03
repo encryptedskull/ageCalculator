@@ -26,12 +26,12 @@ body {
     justify-items: center;
 }
 .root {
-    height: 40%;
+    height: 50%;
     width: 60%;
     display: grid;
     justify-items: center;
     place-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
 }
 .input-div {
     height: 120px;
@@ -61,7 +61,7 @@ body {
 
 .input-tag {
     height: 50px;
-    width: 240px;
+    width: 320px;
     border-radius: 5px;
     outline: none;
     padding: 0 15px;
@@ -74,7 +74,7 @@ body {
 
 .btn {
     height: 50px;
-    width: 100px;
+    width: 150px;
     border-radius: 5px;
     font-weight: 500;
     font-size: large;
@@ -121,17 +121,20 @@ body {
         justify-content: space-between;
     }
     .input-div {
+        /* width: 280px; */
         height: 100px;
     }
     .res-div-display {
-        width: 85px;
+        width: 88px;
     }
 
     .input-tag {
-        width: 160px;
+        width: 150px;
     }
     .btn {
-        width: 80px;
+        width: 75px;
+        font-weight: lighter;
+        font-size: 16px;
     }
 }
 
@@ -158,6 +161,11 @@ body {
     }
 
     .input-tag {
-        width: 100%;
+        width: 300px;
+        font-size: 22px;
+    }
+    .btn {
+        width: 120px;
+        font-size: 22px;
     }
 }
