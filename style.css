@@ -41,6 +41,7 @@ body {
     align-items: center;
     gap: 1rem;
     background: black;
+    border-radius: 12px;
 }
 .result-div {
     height: 120px;
@@ -56,6 +57,7 @@ body {
     place-items: center;
     font-size: 14px;
     font-weight: 500;
+    border-radius: 12px;
     background: black;
 }
 
@@ -88,7 +90,7 @@ body {
 #year-span,
 #month-span,
 #day-span {
-    height: 50px;
+    height: 60px;
     width: 70px;
     font-size: 28px;
     color: whitesmoke;
