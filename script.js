@@ -8,6 +8,8 @@ const yearDiv = document.createElement("div");
 const monthDiv = document.createElement("div");
 const dayDiv = document.createElement("div");
 
+const btnClear = document.createElement("button");
+
 inputDiv.setAttribute("class", "input-div");
 inputTag.setAttribute("class", "input-tag");
 btn.setAttribute("class", "btn");
@@ -15,7 +17,7 @@ resDiv.setAttribute("class", "result-div");
 yearDiv.setAttribute("class", "res-div-display");
 monthDiv.setAttribute("class", "res-div-display");
 dayDiv.setAttribute("class", "res-div-display");
-
+btnClear.setAttribute("class", "clear-btn");
 inputDiv.appendChild(inputTag);
 inputDiv.appendChild(btn);
 
@@ -29,6 +31,7 @@ daySpan.setAttribute("id", "day-span");
 yearSpan.textContent = "-";
 monthSpan.textContent = "-";
 daySpan.textContent = "-";
+btnClear.textContent = "Clear";
 
 const yearPara = document.createElement("p");
 const monthPara = document.createElement("p");
@@ -58,6 +61,7 @@ btn.textContent = "Calculate";
 
 parent.appendChild(inputDiv);
 parent.appendChild(resDiv);
+parent.appendChild(btnClear);
 
 btn.addEventListener("click", function () {
     let today = new Date();
@@ -98,4 +102,11 @@ btn.addEventListener("click", function () {
     yearSpan.textContent = years;
     monthSpan.textContent = months;
     daySpan.textContent = days;
+});
+
+btnClear.addEventListener("click", function () {
+    yearSpan.textContent = "-";
+    monthSpan.textContent = "-";
+    daySpan.textContent = "-";
+    inputTag.value = "";
 });
